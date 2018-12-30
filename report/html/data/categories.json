@@ -1,0 +1,25 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'png_name'",
+      "children" : [ {
+        "name" : "TestLogin.test_login[11111\\u4e2d\\u56fd-9998888-0-\\u4e0d\\u5b58\\u5728-\\u6b64\\u7528\\u62371\\u4e0d\\u5b58\\u5728]",
+        "uid" : "dd6d56822ca4a869",
+        "parentUid" : "fa05f680d561b6bac1c11957701eb950",
+        "status" : "failed",
+        "time" : {
+          "start" : 1546135880068,
+          "stop" : 1546135912535,
+          "duration" : 32467
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fa05f680d561b6bac1c11957701eb950"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

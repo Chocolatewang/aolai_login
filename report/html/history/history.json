@@ -1,0 +1,98 @@
+{
+  "46d4247075849f26c0cb3e773d2af404" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "37a4d89f18079146",
+      "status" : "passed",
+      "time" : {
+        "start" : 1546135930179,
+        "stop" : 1546135947438,
+        "duration" : 17259
+      }
+    } ]
+  },
+  "d59c432a5efec48f85c543d58bbc9a0e" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dd6d56822ca4a869",
+      "status" : "failed",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: 'png_name'",
+      "time" : {
+        "start" : 1546135880068,
+        "stop" : 1546135912535,
+        "duration" : 32467
+      }
+    } ]
+  },
+  "56958dd7d02646360144464738cf9a4b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "aa952e815f393868",
+      "status" : "passed",
+      "time" : {
+        "start" : 1546135912551,
+        "stop" : 1546135930157,
+        "duration" : 17606
+      }
+    } ]
+  },
+  "c251ad23f3434d65b3cc91be1763fbe0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3f19fd73d0b35270",
+      "status" : "passed",
+      "time" : {
+        "start" : 1546135947449,
+        "stop" : 1546135964524,
+        "duration" : 17075
+      }
+    } ]
+  },
+  "831939a17621ac25e2c23999e7315029" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "284f603711a5e9a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1546135964601,
+        "stop" : 1546135978507,
+        "duration" : 13906
+      }
+    } ]
+  }
+}

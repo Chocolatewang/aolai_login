@@ -1,0 +1,202 @@
+{
+  "uid" : "37a4d89f18079146",
+  "name" : "TestLogin.test_login[ 13488834010-159357li-1-None-None]",
+  "fullName" : "test_login2.TestLogin.test_login[ 13488834010-159357li-1-None-None]",
+  "historyId" : "46d4247075849f26c0cb3e773d2af404",
+  "time" : {
+    "start" : 1546135930179,
+    "stop" : 1546135947438,
+    "duration" : 17259
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "点击我的",
+      "time" : {
+        "start" : 1546135930182,
+        "stop" : 1546135931377,
+        "duration" : 1195
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击已有账号",
+      "time" : {
+        "start" : 1546135931377,
+        "stop" : 1546135932864,
+        "duration" : 1487
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "登录逻辑",
+      "time" : {
+        "start" : 1546135932864,
+        "stop" : 1546135941058,
+        "duration" : 8194
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c0c360bad80cf76f",
+        "name" : "登录",
+        "source" : "c0c360bad80cf76f.txt",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "39c75e683f8eabfe",
+        "name" : "登录",
+        "source" : "39c75e683f8eabfe.txt",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "bfb12570ad3fb62f",
+        "name" : "登录",
+        "source" : "bfb12570ad3fb62f.txt",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "判断是否登录成功",
+      "time" : {
+        "start" : 1546135941058,
+        "stop" : 1546135942523,
+        "duration" : 1465
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "89bd03873afe18e4",
+        "name" : "个人中心",
+        "source" : "89bd03873afe18e4.txt",
+        "type" : "text/plain",
+        "size" : 37
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入个人中心设置页面",
+      "time" : {
+        "start" : 1546135942523,
+        "stop" : 1546135943611,
+        "duration" : 1088
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "退出账号",
+      "time" : {
+        "start" : 1546135943611,
+        "stop" : 1546135947438,
+        "duration" : 3827
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "63a9fe5053b9dc17",
+        "name" : "退出账号",
+        "source" : "63a9fe5053b9dc17.txt",
+        "type" : "text/plain",
+        "size" : 12
+      }, {
+        "uid" : "66509beb47c2aec2",
+        "name" : "退出账号",
+        "source" : "66509beb47c2aec2.txt",
+        "type" : "text/plain",
+        "size" : 18
+      }, {
+        "uid" : "784b53ada7a95582",
+        "name" : "退出账号",
+        "source" : "784b53ada7a95582.txt",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 6,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-E6T8B6S"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "11088-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_login2"
+  }, {
+    "name" : "testClass",
+    "value" : "test_login2"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestLogin.test_login[ 13488834010-159357li-1-None-None]"
+  }, {
+    "name" : "package",
+    "value" : "test_login2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "37a4d89f18079146.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,156 @@
+{
+  "uid" : "dd6d56822ca4a869",
+  "name" : "TestLogin.test_login[11111\\u4e2d\\u56fd-9998888-0-\\u4e0d\\u5b58\\u5728-\\u6b64\\u7528\\u62371\\u4e0d\\u5b58\\u5728]",
+  "fullName" : "test_login2.TestLogin.test_login[11111\\u4e2d\\u56fd-9998888-0-\\u4e0d\\u5b58\\u5728-\\u6b64\\u7528\\u62371\\u4e0d\\u5b58\\u5728]",
+  "historyId" : "d59c432a5efec48f85c543d58bbc9a0e",
+  "time" : {
+    "start" : 1546135880068,
+    "stop" : 1546135912535,
+    "duration" : 32467
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'png_name'",
+  "statusTrace" : "self = <test_login2.TestLogin object at 0x000001BBA272B908>, username = '11111中国', password = '9998888', tag = 0, get_toast_msg = '不存在', except_msg = '此用户1不存在'\n\n    @pytest.mark.parametrize(\"username,password,tag,get_toast_msg,except_msg\", get_data())\n    def test_login(self, username, password, tag, get_toast_msg, except_msg):\n        # 1.点击我的\n        self.navigation_page.get_home_page_obj().click_my_button()\n        # 2.点击已有账号\n        self.navigation_page.get_sign_in_page_obj().click_exist_accout()\n        # 3.输入用户名密码 点击登录\n        self.navigation_page.get_login_page_obj().login_in(username, password)\n        if tag == 1:\n            try:\n                login_state = self.navigation_page.get_person_center_page_obj().is_login_sucess()\n                # 4.点击个人中心设置按钮\n                self.navigation_page.get_person_center_page_obj().click_person_center_setting()\n                # 5.点击退出\n                self.navigation_page.get_setting_page_obj().logout_account()\n                assert login_state,self.navigation_page.get_person_center_page_obj().get_screen()\n            except:\n                #6.截图 在哪一个页面出现的问题\n                self.navigation_page.get_person_center_page_obj().get_screen()\n                self.navigation_page.get_login_page_obj().close_login_page()\n        else:\n            try:\n                toast_message = self.navigation_page.get_person_center_page_obj().get_toast_message(get_toast_msg)\n>               assert toast_message == except_msg,self.navigation_page.get_person_center_page_obj().get_screen()\n\nscript\\test_login2.py:62: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.person_center_page.PersonCenterPage object at 0x000001BBA2736E80>\n\n    def get_screen(self):\n        #截图名称\n        png_name = \"./screen/{}.png\".format(int(time.time()))\n        self.driver.get_screenshot_as_file(png_name)\n    \n>       with open(\"png_name\", \"rb\") as f:\nE       FileNotFoundError: [Errno 2] No such file or directory: 'png_name'\n\nbase\\base_aciton.py:63: FileNotFoundError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: 'png_name'",
+    "statusTrace" : "self = <test_login2.TestLogin object at 0x000001BBA272B908>, username = '11111中国', password = '9998888', tag = 0, get_toast_msg = '不存在', except_msg = '此用户1不存在'\n\n    @pytest.mark.parametrize(\"username,password,tag,get_toast_msg,except_msg\", get_data())\n    def test_login(self, username, password, tag, get_toast_msg, except_msg):\n        # 1.点击我的\n        self.navigation_page.get_home_page_obj().click_my_button()\n        # 2.点击已有账号\n        self.navigation_page.get_sign_in_page_obj().click_exist_accout()\n        # 3.输入用户名密码 点击登录\n        self.navigation_page.get_login_page_obj().login_in(username, password)\n        if tag == 1:\n            try:\n                login_state = self.navigation_page.get_person_center_page_obj().is_login_sucess()\n                # 4.点击个人中心设置按钮\n                self.navigation_page.get_person_center_page_obj().click_person_center_setting()\n                # 5.点击退出\n                self.navigation_page.get_setting_page_obj().logout_account()\n                assert login_state,self.navigation_page.get_person_center_page_obj().get_screen()\n            except:\n                #6.截图 在哪一个页面出现的问题\n                self.navigation_page.get_person_center_page_obj().get_screen()\n                self.navigation_page.get_login_page_obj().close_login_page()\n        else:\n            try:\n                toast_message = self.navigation_page.get_person_center_page_obj().get_toast_message(get_toast_msg)\n>               assert toast_message == except_msg,self.navigation_page.get_person_center_page_obj().get_screen()\n\nscript\\test_login2.py:62: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.person_center_page.PersonCenterPage object at 0x000001BBA2736E80>\n\n    def get_screen(self):\n        #截图名称\n        png_name = \"./screen/{}.png\".format(int(time.time()))\n        self.driver.get_screenshot_as_file(png_name)\n    \n>       with open(\"png_name\", \"rb\") as f:\nE       FileNotFoundError: [Errno 2] No such file or directory: 'png_name'\n\nbase\\base_aciton.py:63: FileNotFoundError",
+    "steps" : [ {
+      "name" : "点击我的",
+      "time" : {
+        "start" : 1546135895025,
+        "stop" : 1546135897338,
+        "duration" : 2313
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击已有账号",
+      "time" : {
+        "start" : 1546135897338,
+        "stop" : 1546135899187,
+        "duration" : 1849
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "登录逻辑",
+      "time" : {
+        "start" : 1546135899188,
+        "stop" : 1546135907320,
+        "duration" : 8132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d26c486f1bdeb634",
+        "name" : "登录",
+        "source" : "d26c486f1bdeb634.txt",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "63eb0307d2957c4b",
+        "name" : "登录",
+        "source" : "63eb0307d2957c4b.txt",
+        "type" : "text/plain",
+        "size" : 15
+      }, {
+        "uid" : "49560643af5ebbd0",
+        "name" : "登录",
+        "source" : "49560643af5ebbd0.txt",
+        "type" : "text/plain",
+        "size" : 18
+      } ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "获取吐司",
+      "time" : {
+        "start" : 1546135907320,
+        "stop" : 1546135908396,
+        "duration" : 1076
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 4,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-E6T8B6S"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "11088-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test_login2"
+  }, {
+    "name" : "testClass",
+    "value" : "test_login2"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestLogin.test_login[11111\\u4e2d\\u56fd-9998888-0-\\u4e0d\\u5b58\\u5728-\\u6b64\\u7528\\u62371\\u4e0d\\u5b58\\u5728]"
+  }, {
+    "name" : "package",
+    "value" : "test_login2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "dd6d56822ca4a869.json",
+  "parameterValues" : [ ]
+}

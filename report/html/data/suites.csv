@@ -1,0 +1,6 @@
+"Status","Name","Duration in ms","Description"
+"passed","test_login2.TestLogin.test_login[13488834010-159357li-1-None-None]","17075",""
+"passed","test_login2.TestLogin.test_login[13488834010 -9998888-0-\u767b\u5f55\u5bc6\u7801-\u767b\u5f55\u5bc6\u7801\u9519\u8bef]","13906",""
+"passed","test_login2.TestLogin.test_login[13488834010 -159357li-1-None-None]","17606",""
+"failed","test_login2.TestLogin.test_login[11111\u4e2d\u56fd-9998888-0-\u4e0d\u5b58\u5728-\u6b64\u7528\u62371\u4e0d\u5b58\u5728]","32467",""
+"passed","test_login2.TestLogin.test_login[ 13488834010-159357li-1-None-None]","17259",""
